@@ -15,3 +15,7 @@ Plugin '29decibel/codeschool-vim-theme'
 syntax on
 filetype plugin indent on
 colors codeschool
+
+" NERDTree settings
+autocmd vimenter * NERDTree
+let NERDTreeShowBookmarks=1
