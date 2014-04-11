@@ -10,6 +10,7 @@ Plugin 'git://git.wincent.com/command-t'
 Plugin 'tpope/vim-sleuth'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'mattn/emmet-vim'
 Plugin '29decibel/codeschool-vim-theme'
 
 syntax on
