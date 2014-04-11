@@ -7,6 +7,8 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-rails'
 Plugin 'git://git.wincent.com/command-t'
+Plugin 'tpope/vim-sleuth'
+Plugin 'scrooloose/nerdtree'
 Plugin 'jnurmine/Zenburn'
 
 syntax on
