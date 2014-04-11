@@ -6,7 +6,7 @@ call vundle#rc()
 
 Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-rails'
-Plugin 'git://git.wincent.com/command-t'
+Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-sleuth'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kchmck/vim-coffee-script'
