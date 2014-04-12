@@ -18,5 +18,7 @@ filetype plugin indent on
 colors codeschool
 
 " NERDTree settings
-autocmd vimenter * NERDTree
 let NERDTreeShowBookmarks=1
+
+" Ctrl P settings
+let g:ctrlp_map = '<D-t>'
