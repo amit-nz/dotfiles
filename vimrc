@@ -21,4 +21,4 @@ colors codeschool
 let NERDTreeShowBookmarks=1
 
 " Ctrl P settings
-let g:ctrlp_map = '<D-t>'
+let g:ctrlp_map = '<Leader>t'
