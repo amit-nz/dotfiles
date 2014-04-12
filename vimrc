@@ -19,6 +19,10 @@ colors codeschool
 
 " NERDTree settings
 let NERDTreeShowBookmarks=1
+map <Leader>d :NERDTreeToggle<CR>
 
 " Ctrl P settings
 let g:ctrlp_map = '<Leader>t'
+
+" OpenURL OS X
+:command -bar -nargs=1 OpenURL :!open <args>
