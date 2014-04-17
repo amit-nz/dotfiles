@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Plugin 'gmarik/vundle'
+Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-rails'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-sleuth'
