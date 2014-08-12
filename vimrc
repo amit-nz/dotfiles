@@ -7,6 +7,7 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-rails'
+Plugin 'dsawardekar/ember.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-sleuth'
 Plugin 'scrooloose/nerdtree'
