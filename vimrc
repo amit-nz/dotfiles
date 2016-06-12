@@ -2,9 +2,9 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-rails'
 Plugin 'dsawardekar/ember.vim'
@@ -15,8 +15,10 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'mattn/emmet-vim'
 Plugin '29decibel/codeschool-vim-theme'
 
-syntax on
+call vundle#end()
 filetype plugin indent on
+
+syntax on
 colors codeschool
 
 " NERDTree settings
