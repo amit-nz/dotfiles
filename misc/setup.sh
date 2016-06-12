@@ -25,8 +25,11 @@ brew install tmux
 brew install git
 brew install syncthing
 brew install imagemagick
+
+# dotfiles
 brew tap thoughtbot/formulae
 brew install rcm
+rcup -v -x misc -x README.md
 
 # vim
 brew install vim
