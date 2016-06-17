@@ -17,6 +17,8 @@ brew cask install dropbox
 brew cask install atom
 brew cask install skype
 brew cask install vlc
+brew cask install vagrant
+brew cask install virtualbox
 # brew cask install sourcetree
 # brew cask install 1password
 
@@ -25,6 +27,7 @@ brew install tmux
 brew install git
 brew install syncthing
 brew install imagemagick
+brew install ansible
 
 # dotfiles
 brew tap thoughtbot/formulae
@@ -62,3 +65,7 @@ npm install -g ember-cli
 brew install mongodb
 brew install mysql
 brew install postgresql
+
+# Interactive configuration
+# Atom editor
+apm stars --install
