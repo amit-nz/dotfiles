@@ -13,13 +13,14 @@ Plugin 'tpope/vim-sleuth'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mattn/emmet-vim'
-Plugin '29decibel/codeschool-vim-theme'
+Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 filetype plugin indent on
 
 syntax on
-colors codeschool
+set background=dark
+colorscheme base16-default-dark
 
 " NERDTree settings
 let NERDTreeShowBookmarks=1

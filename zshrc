@@ -86,3 +86,6 @@ source $ZSH/oh-my-zsh.sh
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# thefuck
+eval "$(thefuck --alias)"
