@@ -19,8 +19,6 @@ call vundle#end()
 filetype plugin indent on
 
 syntax on
-set background=dark
-colorscheme base16-default-dark
 
 " NERDTree settings
 let NERDTreeShowBookmarks=1
