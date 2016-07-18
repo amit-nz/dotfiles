@@ -19,7 +19,7 @@ brew cask install skype
 brew cask install vlc
 brew cask install vagrant
 brew cask install virtualbox
-# brew cask install sourcetree
+brew cask install sourcetree
 # brew cask install 1password
 
 # CLI apps
@@ -28,11 +28,7 @@ brew install git
 brew install syncthing
 brew install imagemagick
 brew install ansible
-
-# dotfiles
-brew tap thoughtbot/formulae
-brew install rcm
-rcup -v -x misc -x README.md
+brew install thefuck
 
 # vim
 brew install vim
@@ -43,6 +39,11 @@ vim +PluginInstall +qall
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# dotfiles
+brew tap thoughtbot/formulae
+brew install rcm
+rcup -v -x misc -x README.md
+
 # Ruby
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 cd ~/.rbenv && src/configure && make -C src
@@ -50,6 +51,12 @@ cd ~/.rbenv && src/configure && make -C src
 #echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 #echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+git clone https://github.com/rbenv/rbenv-vars.git ~/.rbenv/plugins/rbenv-vars
+
+# Mac
+# brew install openssl libyaml libffi
+# Ubuntu
+# apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
 
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION
