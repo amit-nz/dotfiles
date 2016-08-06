@@ -9,6 +9,7 @@ readonly NODE_VERSION=homebrew/versions/node4-lts
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/cask
+brew tap homebrew/versions
 
 # GUI apps
 brew cask install google-chrome
@@ -20,6 +21,7 @@ brew cask install vlc
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install sourcetree
+brew cask install mumble
 # brew cask install 1password
 
 # CLI apps
@@ -30,6 +32,11 @@ brew install imagemagick
 brew install ansible
 brew install thefuck
 
+# dotfiles
+brew tap thoughtbot/formulae
+brew install rcm
+rcup -v -x misc -x README.md
+
 # vim
 brew install vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -38,11 +45,6 @@ vim +PluginInstall +qall
 # zsh
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# dotfiles
-brew tap thoughtbot/formulae
-brew install rcm
-rcup -v -x misc -x README.md
 
 # Ruby
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -67,6 +69,7 @@ gem install rails
 # Node
 brew install $NODE_VERSION
 npm install -g ember-cli
+npm install -g bower
 
 # Database servers
 brew install mongodb
