@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Config
-readonly RUBY_VERSION=2.3.1
-readonly NODE_VERSION=homebrew/versions/node4-lts
+readonly RUBY_VERSION=2.3.3
+readonly NODE_VERSION=node@6
 
 # Config end
 
@@ -49,14 +49,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # Ruby
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 cd ~/.rbenv && src/configure && make -C src
-# Handled by dotfiles
-#echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
-#echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/rbenv/rbenv-vars.git ~/.rbenv/plugins/rbenv-vars
 
 # Mac
-# brew install openssl libyaml libffi
+brew install openssl libyaml libffi
 # Ubuntu
 # apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
 
