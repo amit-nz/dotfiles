@@ -11,6 +11,15 @@ readonly NODE_VERSION=node@6
 brew tap caskroom/cask
 brew tap homebrew/versions
 
+# CLI apps
+brew install tmux
+brew install git
+brew install syncthing
+brew install imagemagick
+brew install ansible
+brew install thefuck
+brew install mas
+
 # GUI apps
 brew cask install google-chrome
 brew cask install firefox
@@ -22,15 +31,12 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install sourcetree
 brew cask install mumble
+brew cask install sketch
+brew cask install transmit
+brew cask install sequel-pro
+brew cask install imageoptim
+# Manual install for security:
 # brew cask install 1password
-
-# CLI apps
-brew install tmux
-brew install git
-brew install syncthing
-brew install imagemagick
-brew install ansible
-brew install thefuck
 
 # dotfiles
 brew tap thoughtbot/formulae
@@ -45,6 +51,7 @@ vim +PluginInstall +qall
 # zsh
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc # Use .dotfiles zshrc
 
 # Ruby
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
