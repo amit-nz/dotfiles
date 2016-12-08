@@ -3,8 +3,8 @@
 # Git clone dotfiles repo to ~/.dotfiles
 
 # Config
-readonly RUBY_VERSION=2.3.1
-readonly NODE_VERSION=homebrew/versions/node4-lts
+readonly RUBY_VERSION=2.3.3
+readonly NODE_VERSION=node@6
 
 # Config end
 
@@ -12,6 +12,15 @@ readonly NODE_VERSION=homebrew/versions/node4-lts
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/cask
 brew tap homebrew/versions
+
+# CLI apps
+brew install tmux
+brew install git
+brew install syncthing
+brew install imagemagick
+brew install ansible
+brew install thefuck
+brew install mas
 
 # GUI apps
 brew cask install google-chrome
@@ -25,15 +34,12 @@ brew cask install virtualbox
 brew cask install sourcetree
 brew cask install mumble
 brew cask install istat-menus
+brew cask install sketch
+brew cask install transmit
+brew cask install sequel-pro
+brew cask install imageoptim
+# Manual install for security:
 # brew cask install 1password
-
-# CLI apps
-brew install tmux
-brew install git
-brew install syncthing
-brew install imagemagick
-brew install ansible
-brew install thefuck
 
 # dotfiles
 brew tap thoughtbot/formulae
@@ -48,18 +54,16 @@ vim +PluginInstall +qall
 # zsh
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc # Use .dotfiles zshrc
 
 # Ruby
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 cd ~/.rbenv && src/configure && make -C src
-# Handled by dotfiles
-#echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
-#echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/rbenv/rbenv-vars.git ~/.rbenv/plugins/rbenv-vars
 
 # Mac
-# brew install openssl libyaml libffi
+brew install openssl libyaml libffi
 # Ubuntu
 # apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
 
@@ -82,3 +86,8 @@ brew install postgresql
 # Interactive configuration
 # Atom editor
 apm stars --install
+
+# App Store
+# mas search affinity
+# mas search deliveries
+# mas search wechat
