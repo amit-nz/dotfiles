@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Git clone dotfiles repo to ~/.dotfiles
+
 # Config
 readonly RUBY_VERSION=2.3.1
 readonly NODE_VERSION=homebrew/versions/node4-lts
@@ -22,6 +24,7 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install sourcetree
 brew cask install mumble
+brew cask install istat-menus
 # brew cask install 1password
 
 # CLI apps
