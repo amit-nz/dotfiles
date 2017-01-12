@@ -89,3 +89,7 @@ eval "$(rbenv init -)"
 
 # thefuck
 eval "$(thefuck --alias)"
+
+# go
+export GOPATH=$HOME/Development/go
+export PATH=$PATH:$GOPATH/bin
