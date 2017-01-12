@@ -3,7 +3,7 @@
 # Git clone dotfiles repo to ~/.dotfiles
 
 # Config
-readonly RUBY_VERSION=2.3.3
+readonly RUBY_VERSION=2.4.0
 readonly NODE_VERSION=node@6
 
 # Config end
@@ -29,11 +29,16 @@ brew cask install dropbox
 brew cask install atom
 brew cask install skype
 brew cask install vlc
+brew cask install mumble
+brew cask install istat-menus
+brew cask install flux
+brew cask install transmission
+brew cask install appdelete
+brew cask install vmware-fusion
+# Development
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install sourcetree
-brew cask install mumble
-brew cask install istat-menus
 brew cask install sketch
 brew cask install transmit
 brew cask install sequel-pro
@@ -78,6 +83,9 @@ brew install $NODE_VERSION
 npm install -g ember-cli
 npm install -g bower
 
+# Go
+brew install go
+
 # Database servers
 brew install mongodb
 brew install mysql
@@ -91,3 +99,6 @@ apm stars --install
 # mas search affinity
 # mas search deliveries
 # mas search wechat
+
+# Services
+brew services start syncthing
