@@ -3,38 +3,42 @@
 # Git clone dotfiles repo to ~/.dotfiles
 
 # Config
-readonly RUBY_VERSION=2.4.0
-readonly NODE_VERSION=node@6
+readonly RUBY_VERSION=2.5.3
+readonly NODE_VERSION=node@8
 
 # Config end
 
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew tap caskroom/cask
-brew tap homebrew/versions
 
 # CLI apps
-brew install tmux
-brew install git
-brew install syncthing
-brew install imagemagick
 brew install ansible
-brew install thefuck
+brew install axel
+brew install git
+brew install imagemagick
 brew install mas
+brew install syncthing
+brew install thefuck
+brew install tmux
 
 # GUI apps
-brew cask install google-chrome
-brew cask install firefox
-brew cask install dropbox
-brew cask install atom
-brew cask install skype
-brew cask install vlc
-brew cask install mumble
-brew cask install istat-menus
-brew cask install flux
-brew cask install transmission
+# Manual install for security:
+# brew cask install 1password
+# brew cask install dropbox
 brew cask install appdelete
+brew cask install atom
+brew cask install discord
+brew cask install firefox
+brew cask install flux
+brew cask install google-chrome
+brew cask install istat-menus
+brew cask install skype
+brew cask install spotify
+brew cask install steam
+brew cask install transmission
+brew cask install vlc
 brew cask install vmware-fusion
+
 # Development
 brew cask install vagrant
 brew cask install virtualbox
@@ -43,8 +47,6 @@ brew cask install sketch
 brew cask install transmit
 brew cask install sequel-pro
 brew cask install imageoptim
-# Manual install for security:
-# brew cask install 1password
 
 # dotfiles
 brew tap thoughtbot/formulae
@@ -80,15 +82,15 @@ gem install rails
 
 # Node
 brew install $NODE_VERSION
-npm install -g ember-cli
 npm install -g bower
+# npm install -g ember-cli
 
 # Go
 brew install go
 
 # Database servers
+brew install mariadb
 brew install mongodb
-brew install mysql
 brew install postgresql
 
 # Interactive configuration
