@@ -14,10 +14,13 @@ readonly NODE_VERSION=node@8
 # CLI apps
 brew install ansible
 brew install axel
+brew install fzf
 brew install git
 brew install imagemagick
+brew install iperf3
 brew install mas
 brew install syncthing
+brew install telnet
 brew install thefuck
 brew install tmux
 
@@ -53,15 +56,14 @@ brew tap thoughtbot/formulae
 brew install rcm
 rcup -v -x misc -x README.md
 
+# fish
+brew install fish
+
+# base16 shell
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+
 # vim
 brew install vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
-
-# zsh
-brew install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc # Use .dotfiles zshrc
 
 # Ruby
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
