@@ -58,6 +58,7 @@ rcup -v -x misc -x README.md
 
 # fish
 brew install fish
+curl -L https://get.oh-my.fish | fish # oh-my-fish
 
 # base16 shell
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
