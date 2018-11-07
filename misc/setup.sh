@@ -19,6 +19,7 @@ brew install git
 brew install imagemagick
 brew install iperf3
 brew install mas
+brew install mosh
 brew install syncthing
 brew install telnet
 brew install thefuck
@@ -43,13 +44,14 @@ brew cask install vlc
 brew cask install vmware-fusion
 
 # Development
+brew cask install imageoptim
+brew cask install iterm2
+brew cask install sequel-pro
+brew cask install sketch
+brew cask install sourcetree
+brew cask install transmit
 brew cask install vagrant
 brew cask install virtualbox
-brew cask install sourcetree
-brew cask install sketch
-brew cask install transmit
-brew cask install sequel-pro
-brew cask install imageoptim
 
 # dotfiles
 brew tap thoughtbot/formulae
