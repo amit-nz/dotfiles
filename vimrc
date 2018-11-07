@@ -23,8 +23,10 @@ Plug 'tpope/vim-sleuth'
 call plug#end()
 
 " Theme
-let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-tomorrow-night
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 " Custom
 set number
