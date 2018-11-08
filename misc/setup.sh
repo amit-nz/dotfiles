@@ -24,6 +24,7 @@ brew install syncthing
 brew install telnet
 brew install thefuck
 brew install tmux
+brew install wget
 
 # GUI apps
 # Manual install for security:
@@ -45,7 +46,6 @@ brew cask install vmware-fusion
 
 # Development
 brew cask install imageoptim
-brew cask install iterm2
 brew cask install sequel-pro
 brew cask install sketch
 brew cask install sourcetree

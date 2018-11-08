@@ -8,9 +8,8 @@ endif
 call plug#begin('~/.vim/plugged')
 " Themes
 Plug 'chriskempson/base16-vim'
-Plug 'morhetz/gruvbox'
 " Plugins
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'dsawardekar/ember.vim'
 Plug 'mattn/emmet-vim'
@@ -24,15 +23,19 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 call plug#end()
 
-" Theme
-colorscheme gruvbox
-set background=dark
-
 " Custom
 set number
 set hidden
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
+
+" Theme
+colorscheme base16-tomorrow-night
+
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': 'Tomorrow_Night',
+      \ }
 
 " NERDTree settings
 let NERDTreeShowBookmarks=1
