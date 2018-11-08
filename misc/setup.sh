@@ -25,6 +25,7 @@ brew install telnet
 brew install thefuck
 brew install tmux
 brew install wget
+brew install zsh
 
 # GUI apps
 # Manual install for security:
@@ -53,14 +54,15 @@ brew cask install transmit
 brew cask install vagrant
 brew cask install virtualbox
 
+# zsh
+brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+rm ~/.zshrc
+
 # dotfiles
 brew tap thoughtbot/formulae
 brew install rcm
 rcup -v -x misc -x README.md
-
-# fish
-brew install fish
-curl -L https://get.oh-my.fish | fish # oh-my-fish
 
 # vim
 brew install vim
