@@ -5,10 +5,12 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'chriskempson/base16-vim' " Theme
-
+" Themes
+Plug 'chriskempson/base16-vim'
+Plug 'morhetz/gruvbox'
+" Plugins
+Plug 'vim-airline/vim-airline'
 Plug 'kien/ctrlp.vim'
 Plug 'dsawardekar/ember.vim'
 Plug 'mattn/emmet-vim'
@@ -23,10 +25,8 @@ Plug 'tpope/vim-sleuth'
 call plug#end()
 
 " Theme
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+colorscheme gruvbox
+set background=dark
 
 " Custom
 set number
