@@ -14,6 +14,7 @@ readonly NODE_VERSION=node@8
 # CLI apps
 brew install ansible
 brew install axel
+brew install fd
 brew install fzf
 brew install git
 brew install imagemagick
