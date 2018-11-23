@@ -17,6 +17,7 @@ brew install axel
 brew install fd
 brew install fzf
 brew install git
+brew install gitless
 brew install imagemagick
 brew install iperf3
 brew install mas
