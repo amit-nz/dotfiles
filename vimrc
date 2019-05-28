@@ -7,7 +7,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 " Themes
-Plug 'chriskempson/base16-vim'
+Plug 'joshdick/onedark.vim'
 " Plugins
 Plug 'itchyny/lightline.vim'
 Plug 'dsawardekar/ember.vim'
@@ -33,11 +33,13 @@ nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
 " Theme
-colorscheme base16-tomorrow-night
+syntax on
+colorscheme onedark
+let g:onedark_termcolors=256
 
 " Lightline
 let g:lightline = {
-      \ 'colorscheme': 'Tomorrow_Night',
+      \ 'colorscheme': 'onedark',
       \ }
 
 " NERDTree settings
