@@ -96,12 +96,19 @@ brew install redis
 apm stars --install
 
 # App Store
-# mas search affinity
-# mas search deliveries
-# mas search wechat
+# mas search 'affinity designer'
+# mas install 824171161
+
+# mas search 'wechat'
+# mas install 836500024
+
+# mas search 'xcode'
+# mas install 497799835
 
 # Services
 brew services start syncthing
+
+# Optional
 brew services start mysql
 brew services start mongodb
 brew services start redis
