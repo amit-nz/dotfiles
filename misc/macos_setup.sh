@@ -14,6 +14,7 @@ readonly NODE_VERSION=node@10
 # CLI apps
 brew install ansible
 brew install axel
+brew install cmatrix
 brew install fd
 brew install fzf
 brew install git
