@@ -97,13 +97,13 @@ apm stars --install
 
 # App Store
 # mas search 'affinity designer'
-# mas install 824171161
-
+mas install 824171161
+# mas search 'pipifier'
+mas install 1160374471
 # mas search 'wechat'
-# mas install 836500024
-
+mas install 836500024
 # mas search 'xcode'
-# mas install 497799835
+mas install 497799835
 
 # Services
 brew services start syncthing
