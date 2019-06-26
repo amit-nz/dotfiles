@@ -112,3 +112,4 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # homebrew sbin
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH="/usr/local/opt/node@10/bin:$PATH"
