@@ -52,7 +52,11 @@ brew cask install sequel-pro
 brew cask install sketch
 brew cask install sourcetree
 brew cask install transmit
+
+# vagrant
 brew cask install vagrant
+brew cask install vagrant-vmware-utility
+vagrant plugin install vagrant-vmware-desktop
 
 # zsh
 brew install zsh
@@ -81,7 +85,7 @@ gem install rails
 
 # Node
 brew install $NODE_VERSION
-npm install -g nodemon bower
+npm install -g nodemon
 
 # Go
 # brew install go
@@ -98,18 +102,18 @@ apm stars --install
 
 # App Store
 # mas search 'affinity designer'
-# mas install 824171161
-
+mas install 824171161
+# mas search 'pipifier'
+mas install 1160374471
 # mas search 'wechat'
-# mas install 836500024
-
+mas install 836500024
 # mas search 'xcode'
-# mas install 497799835
+mas install 497799835
 
 # Services
 brew services start syncthing
 
 # Optional
-brew services start mysql
+brew services start mysql@5.7
 brew services start mongodb
 brew services start redis
