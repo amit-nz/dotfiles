@@ -1,11 +1,9 @@
 #!/bin/sh
-
 # Git clone dotfiles repo to ~/.dotfiles
 
 # Config
-readonly RUBY_VERSION=2.5.3
+readonly RUBY_VERSION=2.5.5
 readonly NODE_VERSION=node@10
-
 # Config end
 
 # Homebrew
@@ -102,13 +100,15 @@ apm stars --install
 
 # App Store
 # mas search 'affinity designer'
-mas install 824171161
+mas info 824171161 && mas install 824171161
+# mas search 'magnet'
+mas info 441258766 && mas install 441258766
 # mas search 'pipifier'
-mas install 1160374471
+mas 1160374471 info && mas install 1160374471
 # mas search 'wechat'
-mas install 836500024
+mas 836500024 info && mas install 836500024
 # mas search 'xcode'
-mas install 497799835
+mas info 497799835 && mas install 497799835
 
 # Services
 brew services start syncthing
