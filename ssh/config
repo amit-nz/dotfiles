@@ -1,5 +1,5 @@
 Host *
   AddKeysToAgent yes
   UseKeychain yes
-  ServerAliveInterval 60
+  ServerAliveInterval 30
   ServerAliveCountMax 3

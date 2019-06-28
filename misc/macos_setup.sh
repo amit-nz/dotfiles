@@ -46,6 +46,7 @@ brew cask install vmware-fusion
 
 # Development
 brew cask install imageoptim
+brew cask install postman
 brew cask install sequel-pro
 brew cask install sketch
 brew cask install sourcetree
@@ -99,10 +100,14 @@ brew install redis
 apm stars --install
 
 # App Store
+# mas search '1blocker'
+mas info 1107421413 && mas install 1107421413
 # mas search 'affinity designer'
 mas info 824171161 && mas install 824171161
 # mas search 'magnet'
 mas info 441258766 && mas install 441258766
+# mas search 'Microsoft Remote Desktop 10'
+mas info 1295203466 && mas install 1295203466
 # mas search 'pipifier'
 mas 1160374471 info && mas install 1160374471
 # mas search 'wechat'
