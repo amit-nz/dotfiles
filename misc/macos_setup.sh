@@ -84,7 +84,8 @@ gem install rails
 
 # Node
 brew install $NODE_VERSION
-npm install -g nodemon
+brew install yarn
+yarn global install nodemon
 
 # Go
 # brew install go
