@@ -21,10 +21,10 @@ brew install iperf3
 brew install mas
 brew install mosh
 brew install mtr
-brew install syncthing
 brew install telnet
 brew install thefuck
 brew install tmux
+brew install watch
 brew install wget
 
 # GUI apps
@@ -34,12 +34,12 @@ brew cask install appdelete
 brew cask install atom
 brew cask install discord
 brew cask install firefox
-brew cask install nextcloud
 brew cask install istat-menus
 brew cask install iterm2
 brew cask install skype
 brew cask install spotify
 brew cask install steam
+brew cask install syncthing
 brew cask install transmission
 brew cask install vlc
 brew cask install vmware-fusion
@@ -92,9 +92,10 @@ yarn global install nodemon
 
 # Database servers
 brew install mysql@5.7
-brew install mongodb
 brew install redis
 # brew install postgresql
+brew tap mongodb/brew
+brew install mongodb-community
 
 # Interactive configuration
 # Atom editor
@@ -110,9 +111,9 @@ mas info 441258766 && mas install 441258766
 # mas search 'Microsoft Remote Desktop 10'
 mas info 1295203466 && mas install 1295203466
 # mas search 'pipifier'
-mas 1160374471 info && mas install 1160374471
+mas info 1160374471 && mas install 1160374471
 # mas search 'wechat'
-mas 836500024 info && mas install 836500024
+mas info 836500024 && mas install 836500024
 # mas search 'xcode'
 mas info 497799835 && mas install 497799835
 
