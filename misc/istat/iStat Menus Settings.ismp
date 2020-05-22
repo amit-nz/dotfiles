@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>build</key>
-	<string>1107</string>
+	<string>1113</string>
 	<key>license</key>
 	<dict>
 		<key>email</key>
@@ -347,6 +347,6 @@
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>6.31</string>
+	<string>6.40</string>
 </dict>
 </plist>
