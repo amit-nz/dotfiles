@@ -7,7 +7,7 @@ readonly NODE_VERSION=node@10
 # Config end
 
 # Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # CLI apps
 brew install ansible
@@ -21,6 +21,7 @@ brew install iperf3
 brew install mas
 brew install mosh
 brew install mtr
+brew install syncthing
 brew install telnet
 brew install thefuck
 brew install tmux
@@ -31,7 +32,6 @@ brew install wget
 # Manual install for security:
 # brew cask install 1password
 brew cask install appdelete
-brew cask install atom
 brew cask install discord
 brew cask install firefox
 brew cask install istat-menus
@@ -39,16 +39,17 @@ brew cask install iterm2
 brew cask install skype
 brew cask install spotify
 brew cask install steam
-brew cask install syncthing
+brew cask install telegram-desktop
 brew cask install transmission
 brew cask install vlc
-brew cask install vmware-fusion
+brew cask install visual-studio-code
+# brew cask install vmware-fusion
 
 # Development
 brew cask install imageoptim
 brew cask install postman
 brew cask install sequel-pro
-brew cask install sketch
+# brew cask install sketch
 brew cask install sourcetree
 brew cask install transmit
 
@@ -59,7 +60,7 @@ vagrant plugin install vagrant-vmware-desktop
 
 # zsh
 brew install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm ~/.zshrc
 
 # dotfiles
@@ -72,34 +73,25 @@ brew install vim
 vim +'PlugInstall --sync' +qa
 
 # Ruby
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-cd ~/.rbenv && src/configure && make -C src
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-git clone https://github.com/rbenv/rbenv-vars.git ~/.rbenv/plugins/rbenv-vars
-brew install openssl libyaml libffi
+brew install rbenv
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION
 gem install bundler
 gem install rails
 
 # Node
-brew install $NODE_VERSION
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+nvm install --lts
 brew install yarn
-yarn global install nodemon
-
-# Go
-# brew install go
+yarn global add nodemon
 
 # Database servers
 brew install mysql@5.7
+mysql_secure_installation
+
 brew install redis
-# brew install postgresql
 brew tap mongodb/brew
 brew install mongodb-community
-
-# Interactive configuration
-# Atom editor
-apm stars --install
 
 # App Store
 # mas search '1blocker'
@@ -108,8 +100,6 @@ mas info 1107421413 && mas install 1107421413
 mas info 824171161 && mas install 824171161
 # mas search 'magnet'
 mas info 441258766 && mas install 441258766
-# mas search 'Microsoft Remote Desktop 10'
-mas info 1295203466 && mas install 1295203466
 # mas search 'pipifier'
 mas info 1160374471 && mas install 1160374471
 # mas search 'wechat'
