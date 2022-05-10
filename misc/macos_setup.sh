@@ -12,7 +12,7 @@ readonly NODE_VERSION=node@10
 # CLI apps
 brew install ansible
 brew install axel
-brew install cmatrix
+# brew install cmatrix
 brew install fd
 brew install fzf
 brew install git
@@ -39,7 +39,7 @@ brew cask install iterm2
 brew cask install skype
 brew cask install spotify
 brew cask install steam
-brew cask install telegram-desktop
+# brew cask install telegram-desktop
 brew cask install transmission
 brew cask install vlc
 brew cask install visual-studio-code
